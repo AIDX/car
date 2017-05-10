@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="js/jq.js"></script>
+  <script src="js/_.js"></script>
+  <script src="js/bb.js"></script>
+</head>
+
+<body>
+  <script id="shopTemplate" type="text/template">
+    <%= title %> Адрес: <%= address %>
+    <button class="showCmnts">Показать отзывы</button>
+    <button class="addCmnt">Добавить отзыв</button>
+  </script>
+  
+  <script id="commentTemplate" type="text/template">
+    <%= author %> <%= rate %> <%= comment %>
+  </script>
+  
+  <script id="editTemplate" type="text/template">
+    <div>Имя:</div>
+    <input class="name" type="text" value="">
+    <div>Отзыв:</div>
+    <input class="comm" type="text" value="">
+    <div></div>
+    <select class="rate">
+      <option value="0">0 звёзд</option>
+      <option value="1">1 звёзда</option>
+      <option value="2">2 звёзды</option>
+      <option value="3">3 звёзды</option>
+      <option value="4">4 звёзды</option>
+      <option value="5">5 звёзд</option>
+    </select>
+    <button class="saveCmnt">Сохранить</button>
+  </script>
+  
+  <script src="js/my.js"></script>
+  
+</body>
+
+</html>
